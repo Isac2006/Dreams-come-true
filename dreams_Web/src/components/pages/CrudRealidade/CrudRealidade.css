@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
-div.fundo{
+div.chat-container{
 color: #1e1e26;
   
  display: block;
  align-items: center;
  width: 80%;
  height: 80%;
- overflow-y: scroll;
+ overflow-y: auto;
+ max-height: 400px;
+ border-width: 0px;
+ min-width: 400px;
 }
-div.chat-conteiner{
+p.pme{
     background-color: #40026c;
     display: block ;    
     color: white;
@@ -16,8 +19,16 @@ div.chat-conteiner{
     justify-content: center;
     width: auto;
 height: 10%;
+font-size: large;
+
 }
-button.botaopesquisa{
+div.chat-wrapper{
+    background: linear-gradient(90deg, rgba(91, 0, 166, 1) 0%, rgba(98, 4, 138, 1) 50%, rgba(203, 99, 255, 1) 100%);
+
+
+}
+
+button.pes{
     background-color: #4c006d;
     width: 100px;
     height: 100px;
@@ -33,9 +44,9 @@ display: block ;
 
     color: white;
 }
-input.caixa{
+input.barra{
 
-    width: 511vh;
+    width: auto;
     left: 35%;         
     height: 100px;            /* Altura da caixa de texto */
     padding: 15px;            /* Espaçamento interno */
@@ -44,13 +55,13 @@ input.caixa{
     border-radius: 10px;      /* Bordas arredondadas */
             /* Remover borda ao clicar */
 
-    background-color: #430086;/* Cor de fundo clara */
+    background-color: #420084;/* Cor de fundo clara */
     color: white;
     position: relative;
-    border-width: 0px;
+    border-width: 2px;
     border-radius: 20xp;
-    position: fixed;
-    top:50%;
+    position: relative;
+
 }
 div.input-container{
     width: 100%;

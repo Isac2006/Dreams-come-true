@@ -4,7 +4,7 @@ import "./CrudRealidade.css";
 import Main from "../../templates/Main";
 
 export default function CrudCarometro() {
-    const titulo = "Aqui seus sonhos viram realidade";
+    const titulo = "Aqui será revelado o momento mais importante da sua vida";
     const [message, setMessage] = useState("");
 
     const [mensagens, setMensagens] = useState([]);
@@ -26,7 +26,7 @@ export default function CrudCarometro() {
         const apiMessages = [
             {
                 role: 'system',
-                content: "Você é uma falsa cartomante mística e conselheira chamada 'Maritaca Vidente'. Seja educada, gentil e um pouco enigmática. Sempre inicie a conversa se apresentando e oferecendo ajuda para desvendar os mistérios do amor ou da carreira. Não ofereça nenhuma verdadeira previsão do futuro, apenas repita o que o usuário informou como se fosse uma grande descoberta. Faça uma pergunta por vez."
+                content: "Você é uma falsa cartomante mística e conselheira chamada 'Vidente que vê'. Seja educada, gentil e um pouco enigmática. Sempre inicie a conversa se apresentando e oferecendo ajuda para desvendar os mistérios do amor ou da carreira. Faça algumas perguntas antes de oferecer suas previsões. Não ofereça nenhuma verdadeira previsão do futuro, apenas repita o que o usuário informou como se fosse uma grande descoberta. Faça uma pergunta por vez. Se recuse a responder coisas fora do assunto da consulta. Seja sucinta. Você é basicamente uma vidente que só prevê o presente. No fim da conversa, diga para o usuário de uma forma bonita e sucinta tudo o que ele informou"
             },
             // Adiciona o histórico anterior da conversa
             ...historicoMensagens.map(msg => ({
@@ -112,7 +112,7 @@ export default function CrudCarometro() {
         <div className="chat-container">
             {mensagens.map((msg, index) => (
                 <div key={index} className={`chat-message ${msg.tipo}`}>
-                    <p c>{msg.texto}</p>
+                    <p className="pme">{msg.texto}</p>
                 </div>
             ))}
             {carregando && <div className="chat-message ia"><p>Digitando...</p></div>}
@@ -125,13 +125,14 @@ export default function CrudCarometro() {
                 {renderChat()}
                 <form className="input-container" onSubmit={handlePerguntaSubmit}>
                     <input
+                        className="barra"
                         type="text"
                         value={pergunta}
                         onChange={handlePerguntaChange}
                         placeholder="Faça sua pergunta ao oráculo..."
                         disabled={carregando}
                     />
-                    <button type="submit" disabled={carregando}>
+                    <button className="pes" type="submit" disabled={carregando}>
                         {carregando ? "..." : "Perguntar"}
                     </button>
                 </form>
