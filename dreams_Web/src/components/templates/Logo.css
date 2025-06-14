@@ -4,13 +4,13 @@ aside.logo {
     float: left;
     
     width: var(--logo-width);
-    height: 100%;
+    height: auto;
 }
 
 aside.logo img {
-    width: 100%;
+    width: 40%  ;
     height: auto;
-    padding: 5px 0 0 15px;
+    
     /*padding-top: 5px;
     padding-left: 15px;*/
 }

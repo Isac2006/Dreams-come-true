@@ -3,7 +3,7 @@
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
 :root {
-    --bg-menu: #191622;
+    --bg-menu: #4d0c83;
     --bg-primary:     background-color: #10101a;
     --logo-width: 150px;
     --content-header-height: 6.5%
@@ -23,6 +23,7 @@ body {
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #54007b;
 }
 
 body {
@@ -71,16 +72,16 @@ footer.footer {
     width: 0.7vw;
 }
 
-/* TO STYLE THE SCROLLBAR TRACK */
+/* TO STYLE sTHE SCROLLBAR TRACK */
 ::-webkit-scrollbar-track {
-    background-color: #000000;
+    background-color: #54007b;
     /* THIS WILL SET THE COLOR OF THE SCROLLBAR TRACK */
 }
 
 /* TO STYLE THE SCROLLBAR THUMB */
 ::-webkit-scrollbar-thumb {
-    background-color: #4d37a0;
-    border: 0.25vw solid #000000;
+    background-color: #4d37a0;  
+    border: 0.25vw solid #9900f167;
     border-radius: 1vw;
 }
 

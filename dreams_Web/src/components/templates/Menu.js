@@ -24,28 +24,6 @@ export default function Menu(_props) {
             <NavLink to="/realidade" activeClassName="active">
                 Realidade
             </NavLink>
-            <NavLink to="/restaurantes" activeClassName="active">
-                Restaurantes
-            </NavLink>
-            <NavLink to="/filmes" activeClassName="active">
-                Filmes
-            </NavLink>
-            <NavLink to="/usuarios" activeClassName="active">
-                Usuários
-            </NavLink>
-
-            {/* Troca de acordo entre logado e deslogado*/}
-            <div className="enterMethod">
-                {currentUser ? (
-                    <NavLink to="/logout" activeClassName="active">
-                        Logout
-                    </NavLink>
-                ) : (
-                    <NavLink to="/login" activeClassName="active">
-                        Login
-                    </NavLink>
-                )}
-            </div>
         </nav>
     )
 }
