@@ -37,7 +37,7 @@ export default function Rotas() {
             )}
 
             <Route path="/filmes" element={<CrudFilme />} />
-            <Route path="/realidade" element={<CrudRealidade />} />
+            <Route path="/consulta" element={<CrudRealidade />} />
             {currentUser ? (<Route path="/usuarios" element={<CrudUsuario />} />) : (
                 <Route exact path='/usuarios'
                     element={

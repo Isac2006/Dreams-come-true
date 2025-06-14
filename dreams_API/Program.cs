@@ -73,8 +73,6 @@ if (app.Environment.IsDevelopment())
 
 //app.UseHttpsRedirection();
 
-//Allow CORS
-app.UseCors(MyAllowSpecificOrigins);
 
 // Authentication & Authorization
 app.UseAuthentication();

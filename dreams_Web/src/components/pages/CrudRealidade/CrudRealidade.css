@@ -1,5 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+div.fundo{
+color: #1e1e26;
+  
+ display: block;
+ align-items: center;
+ width: 80%;
+ height: 80%;
+ overflow-y: scroll;
+}
+div.chat-conteiner{
+    background-color: #40026c;
+    display: block ;    
+    color: white;
+    width: auto;
+    justify-content: center;
+    width: auto;
+height: 10%;
+}
+button.botaopesquisa{
+    background-color: #4c006d;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    left: 35%;
+    border-width: 0px;
+}
+div.fundo p.pmensagem{
+    background-color: #40026c;
+display: block ;
 
+    color: white;
+}
+input.caixa{
+
+    width: 511vh;
+    left: 35%;         
+    height: 100px;            /* Altura da caixa de texto */
+    padding: 15px;            /* Espaçamento interno */
+    font-size: 16px;          /* Tamanho da fonte */
+    border: 2px solid #ccc;   /* Borda cinza suave */
+    border-radius: 10px;      /* Bordas arredondadas */
+            /* Remover borda ao clicar */
+
+    background-color: #430086;/* Cor de fundo clara */
+    color: white;
+    position: relative;
+    border-width: 0px;
+    border-radius: 20xp;
+    position: fixed;
+    top:50%;
+}
+div.input-container{
+    width: 100%;
+    display: block;    
+}
 div.carometro {
     width: 80%;
     height: 80%;
@@ -86,9 +142,7 @@ select .selectCarometro option {
 }
 
 .card-description {
-    margin-bottom: 10px;
-}
-
+margin-bottom: 10px;}
 .card-img {
     height: 110px;
     max-height: 160px;

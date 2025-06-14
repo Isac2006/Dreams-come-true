@@ -18,7 +18,7 @@ export default class Home extends Component {
                             <p className="an-fadeIn  esconder">
                            Resolva problemas futuros e atuais 
                             </p>
-                            <Link to="/realidade" >
+                            <Link to="/consulta" >
                                 <a className="btnD1 an-fadeIn-btn">Comece sua consulta  </a>
                             </Link>
                         </div>

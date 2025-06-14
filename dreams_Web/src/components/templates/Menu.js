@@ -19,10 +19,10 @@ export default function Menu(_props) {
         // usando o activeClassname e um css pra pegar essa classname
         <nav className='menu'>
             <NavLink to="/" activeClassName="active"> {/* activeClassName="active" = className={({ isActive }) => isActive? "active": ''}*/}
-                Sonho
+                Home
             </NavLink>
-            <NavLink to="/realidade" activeClassName="active">
-                Realidade
+            <NavLink to="/consulta" activeClassName="active">
+                Consulta
             </NavLink>
         </nav>
     )
